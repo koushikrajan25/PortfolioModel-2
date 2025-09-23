@@ -1,43 +1,75 @@
 body {
   background-color: #23242a;
+  font-family: 'JetBrains Mono', 'Poppins', Arial, sans-serif;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
   color: #e6e6e6;
 }
 
-/* Header */
 .site-header {
-  top: 32px;
-  left: 42px;
-  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   background: transparent;
-  padding: 30px 40px;
+  padding: 36px 60px 0 60px;
 }
 
-.brand {
+.site-brand {
   display: flex;
   align-items: center;
 }
 
-.brand-name {
-  font-family: 'Poppins', monospace, Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
+.site-nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
   color: #e6e6e6;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.08rem;
+  position: relative;
+}
+.nav-link.active, .nav-link:hover {
+  color: #00ffb2;
+  border-bottom: 2px solid #00ffb2;
+}
+.lang-toggle {
+  background: #00ffb2;
+  color: #23242a;
+  border: none;
+  border-radius: 18px;
+  padding: 0.5em 1.2em;
+  font-family: inherit;
+  font-weight: 600;
+  margin-left: 18px;
+  cursor: pointer;
+}
+.globe-icon {
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-family: 'JetBrains Mono', 'Poppins', monospace, Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #e6e6e6;
+  letter-spacing: 0.05em;
 }
 
 .brand-dot {
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  margin-left: 12px;
   border-radius: 50%;
-  background: #61e786;
-  box-shadow: 0 0 8px #61e78688;
+  background: #00ffb2;
+  box-shadow: 0 0 10px #00ffb277;
 }
 
-/* Main Hero Section */
 .main-hero {
   width: 100vw;
   min-height: 70vh;
@@ -45,6 +77,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0;
+  position: relative;
 }
 
 .hero-flex {
@@ -54,6 +87,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 56px;
+  /* add grid overlay if desired */
 }
 
 .hero-info {
@@ -61,39 +95,115 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
-.subtitle {
-  font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-  color: #e6e6e6;
-  font-size: 1.12rem;
-  letter-spacing: 0.07em;
-  margin-bottom: 1.1rem;
+.role-label {
+  color: #eee;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.25rem;
+  margin-bottom: 1.3rem;
 }
 
 .hero-info h1 {
   font-family: 'JetBrains Mono', 'Fira Mono', monospace;
   font-size: 4rem;
-  line-height: 1.05;
-  font-weight: 700;
-  margin: 0 0 1.2rem 0;
+  line-height: 1.08;
+  font-weight: 900;
+  margin: 0 0 1.1rem 0;
   color: #fff;
   letter-spacing: 0.01em;
 }
+
 .hero-info h1 .accent {
   display: block;
   color: #00ffb2;
-  font-size: 4.09rem;
+  font-size: 4.2rem;
   font-weight: 900;
+  line-height: 1.05;
 }
 
 .desc {
   margin-top: 0;
-  font-size: 1.13rem;
-  max-width: 530px;
+  font-size: 1.15rem;
+  max-width: 545px;
   color: #bcbcbc;
   font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+  margin-bottom: 2.2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 0.8rem;
+  align-items: center;
+}
+.download-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.05rem;
+  background: transparent;
+  color: #00ffb2;
+  border: 2px solid #00ffb2;
+  border-radius: 28px;
+  padding: 0.68em 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 10px #00ffb275;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.22s cubic-bezier(.7,0,.3,1);
+  cursor: pointer;
+}
+
+.download-cv-btn:hover {
+  background: #00ffb2;
+  color: #23242a;
+}
+.contact {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.05rem;
+  background: transparent;
+  color: #00ffb2;
+  border: 2px solid #00ffb2;
+  border-radius: 28px;
+  padding: 0.68em 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 10px #00ffb275;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.22s cubic-bezier(.7,0,.3,1);
+  cursor: pointer;
+}
+
+.contact:hover {
+  background: #00ffb2;
+  color: #23242a;
+}
+
+.hero-social {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border: 2px solid #00ffb2;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #00ffb2;
+  background: transparent;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+}
+.hero-social:hover {
+  background: #00ffb2;
+  color: #23242a;
 }
 
 .hero-photo {
@@ -106,57 +216,53 @@ body {
 .profile-glow {
   display: inline-block;
   border-radius: 50%;
-  padding: 9px;
+  padding: 11px;
   background: transparent;
-  border: 3px solid transparent;
-  box-shadow: 0 0 0 2px rgba(44,255,100,0.11), 0 0 90px #00ffb277;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 4px rgba(0,255,178,0.18), 0 0 130px #00ffb277;
   position: relative;
 }
+
+.accent-border {
+  position: relative;
+}
+.accent-border:before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 3px dashed #00ffb2;
+  opacity: 0.95;
+  pointer-events: none;
+  animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(110deg);}
+}
+
 .profile-glow img {
-  width: 310px;
-  height: 310px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #00ffb2;
-  box-shadow: 0 0 24px #00ffb299;
+  box-shadow: 0 0 32px #00ffb299;
   transition: transform 0.3s, box-shadow 0.3s;
   background: #181a1f;
 }
 
-/* Download CV Button */
-.download-cv-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  border: 2px solid #21fa98;
-  color: #21fa98;
-  padding: 0.85em 2.2em;
-  border-radius: 2em;
-  font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-  font-size: 1.1rem;
-  font-weight: 600;
-  background: transparent;
-  letter-spacing: 0.16em;
-  text-decoration: none;
-  transition: background 0.2s, color 0.18s, box-shadow 0.18s;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-.download-cv-btn:hover {
-  background: #21fa9815;
-  color: #131515;
-  box-shadow: 0 2px 14px #00000077;
-}
-.download-cv-btn .download-icon {
-  vertical-align: middle;
-  margin-left: 6px;
-}
-
 @media (max-width: 950px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 24px;
+  }
   .hero-flex {
     flex-direction: column;
     align-items: center;
-    gap: 26px;
+    gap: 30px;
     text-align: center;
   }
   .hero-info, .hero-photo {
@@ -167,9 +273,58 @@ body {
     font-size: 2.1rem;
   }
   .profile-glow img {
-    width: 160px; height: 160px;
+    width: 160px;
+    height: 160px;
   }
-  .download-cv-btn {
+  .download-cv-btn,
+  .hero-actions {
     justify-content: center;
+    align-items: center;
   }
+}
+
+.footer {
+  width: 100%;
+  background: #19181d;
+  padding: 36px 0 20px 0;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.footer-name {
+  color: #fafafa;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 26px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid #35ff95;
+  border-radius: 50%;
+  color: #35ff95;
+  font-size: 1.25rem;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  background: #35ff95;
+  color: #19181d;
 }
