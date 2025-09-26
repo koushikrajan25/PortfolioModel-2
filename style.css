@@ -6,8 +6,10 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
-.site-header {
+/* Header 
+
+*/
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-.site-brand {
+.brand {
   display: flex;
   align-items: center;
 }
@@ -46,7 +48,7 @@ body {
 .main-hero {
   max-width: 1250px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 80px;
   min-height: 65vh;
   display: flex;
   align-items: flex-start;

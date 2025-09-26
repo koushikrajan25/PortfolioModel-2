@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>KoushikRajan | Developer Portfolio</title>
-    <meta name="keywords" content="KoushikRajan, Developer, application Development, Web Development, Portfolio" />
-    <meta name="description" content="Koushik | Application Development and Web Development Portfolio" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KoushikRajan's Portfolio</title>
+  <meta name="keywords" content="KoushikRajan, Developer, application Development, Web Development, Portfolio" />
+  <meta name="description" content="Koushik | Application Development and Web Development Portfolio" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
 
 <!-- Site Header 
  
 -->
-  <header class="site-header">
-  <div class="site-brand">
+<header class="header">
+  <div class="brand">
     <span class="my-name">KoushikRajan</span>
     <span class="my-name-dot"></span>
   </div>
@@ -29,33 +33,32 @@
     <div class="hero-info">
       <h1>
         Hello I'm <br />
-        <span class="accent">Koushik<br/>Rajan</span>
+        <span class="accent">Koushik<br />Rajan</span>
       </h1>
       <p class="desc">
-        Web &amp; application developer.
+        aspiring Web &amp; application developer.
       </p>
       <div class="hero-actions">
-
-        <!--CV-->
-        <a class="download-cv-btn" href="" target="_blank">
+        <!-- CV -->
+        <a class="download-cv-btn" href="https://raw.githubusercontent.com/koushikrajan25/PortfolioModel-2/main/assets/KoushikResume2025.pdf" download="filename.pdf"
+target="_blank">
           DOWNLOAD CV <span class="download-icon">⭳</span>
         </a>
-
-        <!--Contact-->
-          <a class="contact"target="_blank">Contact me !!</a>
+        <!-- Contact -->
+        <a class="contact" href="#contact-section">Contact me !!</a>
       </div>
     </div>
-    <!--Profile-->
+    <!-- Profile -->
     <div class="hero-photo">
       <div class="profile-glow accent-border">
-        <img src="https://raw.githubusercontent.com/koushikrajan25/PortfolioModel-1/main/assets/Profile.jpg" alt="Koushik Rajan" />
+        <img src="https://raw.githubusercontent.com/koushikrajan25/PortfolioModel-2/main/assets/Profile/Profile.jpg" alt="Koushik Rajan" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- Skills Section
-
+<!-- Tech Stack Section
+ 
 -->
 <section id="tech-stack">
   <div class="tech-stack-row">
@@ -65,17 +68,17 @@
       <img src="assets/Skill_icons/HTML.svg" alt="HTML5" title="HTML5" />
       <img src="assets/Skill_icons/CSS.svg" alt="CSS3" title="CSS3" />
       <img src="assets/Skill_icons/JavaScript.svg" alt="JavaScript" title="JavaScript" />
-      <img src="assets/Skill_icons/Java-Light.svg" alt="TypeScript" title="TypeScript" />
-      <img src="assets/Skill_icons/Kotlin-Light.svg" alt="React" title="React" />
-      <img src="assets/Skill_icons/Github-Light.svg" alt="Next.js" title="Next.js" />
-      <img src="assets/Skill_icons/AndroidStudio-Light.svg" alt="Figma" title="Figma" />
-      <img src="assets/Skill_icons/Figma-Light.svg" alt="Tailwind CSS" title="Tailwind CSS" />
+      <img src="assets/Skill_icons/Java-Light.svg" alt="Java" title="Java" />
+      <img src="assets/Skill_icons/Kotlin-Light.svg" alt="Kotlin" title="Kotlin" />
+      <img src="assets/Skill_icons/Github-Light.svg" alt="Github" title="GitHub" />
+      <img src="assets/Skill_icons/AndroidStudio-Light.svg" alt="AndroidStudio" title="AndroidStudio" />
+      <img src="assets/Skill_icons/Figma-Light.svg" alt="Figma" title="Figma" />
     </div>
   </div>
 </section>
 
-<!--education section
-
+<!-- Education Section 
+ 
 -->
 <section id="education-section">
   <div class="education-container">
@@ -111,33 +114,29 @@
   </div>
 </section>
 
-<!-- Contact Box
+<!-- Contact Section
  
 -->
 <section id="contact-section" class="contact-section">
   <h2>How about a Coffee & Chat?</h2>
   <div class="contact-grid">
-    
-  <div class="contact-item">
-    <p><strong>Email</strong><br>koushikkalai25@gmail.com</p>
-  </div>
-
     <div class="contact-item">
-      <p><strong>Phone</strong><br>+91 9566556834</p>
+      <p><strong>Email</strong><br />koushikkalai25@gmail.com</p>
     </div>
-
-  <a class="contact-item contact-link" href="https://linkedin.com/in/koushikrajana/" target="_blank" rel="noopener">
-    <img src="assets/Contact_icon/icons8-linkedin-50.png" alt="LinkedIn" class="contact-icon-img" />
-  </a>
-
-  <a class="contact-item contact-link" href="https://github.com/koushikrajan25" target="_blank" rel="noopener">
-    <img src="assets/Contact_icon/icons8-github-logo-50.png" alt="GitHub" class="contact-icon-img" />
-  </a>
+    <div class="contact-item">
+      <p><strong>Phone</strong><br />+91 9566556834</p>
+    </div>
+    <a class="contact-item contact-link" href="https://linkedin.com/in/koushikrajana/" target="_blank" rel="noopener">
+      <img src="assets/Contact_icon/icons8-linkedin-50.png" alt="LinkedIn" class="contact-icon-img" />
+    </a>
+    <a class="contact-item contact-link" href="https://github.com/koushikrajan25" target="_blank" rel="noopener">
+      <img src="assets/Contact_icon/icons8-github-logo-50.png" alt="GitHub" class="contact-icon-img" />
+    </a>
   </div>
   <p>Interested in working together? Feel free to reach out!</p>
 </section>
 
-<!-- Footer Section
+<!-- Footer Section 
  
 -->
 <footer class="footer">
@@ -145,18 +144,50 @@
     <span class="footer-name">@KoushikRajan</span>
   </div>
 </footer>
+
 <script>
   function toggleEducation() {
-  const content = document.getElementById("education-content");
-  const btn = document.getElementById("education-toggle");
-  if (content.classList.contains("collapsed")) {
-    content.classList.remove("collapsed");
-    btn.textContent = "Collapse";
-  } else {
-    content.classList.add("collapsed");
-    btn.textContent = "Expand";
+    const content = document.getElementById("education-content");
+    const btn = document.getElementById("education-toggle");
+    if (content.classList.contains("collapsed")) {
+      content.classList.remove("collapsed");
+      btn.textContent = "Collapse";
+    } else {
+      content.classList.add("collapsed");
+      btn.textContent = "Expand";
+    }
   }
-}
+
+  document.querySelector('.contact').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link'); // If any nav links
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 70;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+
+const profileGlow = document.querySelector('.profile-glow');
+profileGlow.addEventListener('click', () => {
+  profileGlow.classList.toggle('active-glow');
+});
+
 </script>
+
 </body>
 </html>
