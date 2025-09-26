@@ -54,6 +54,63 @@
   </div>
 </section>
 
+<!-- Skills Section
+
+-->
+<section id="tech-stack">
+  <div class="tech-stack-row">
+    <span class="tech-stack-label">Tech Stack </span>
+    <span class="tech-stack-divider"></span>
+    <div class="tech-stack-icons">
+      <img src="assets/Skill_icons/HTML.svg" alt="HTML5" title="HTML5" />
+      <img src="assets/Skill_icons/CSS.svg" alt="CSS3" title="CSS3" />
+      <img src="assets/Skill_icons/JavaScript.svg" alt="JavaScript" title="JavaScript" />
+      <img src="assets/Skill_icons/Java-Light.svg" alt="TypeScript" title="TypeScript" />
+      <img src="assets/Skill_icons/Kotlin-Light.svg" alt="React" title="React" />
+      <img src="assets/Skill_icons/Github-Light.svg" alt="Next.js" title="Next.js" />
+      <img src="assets/Skill_icons/AndroidStudio-Light.svg" alt="Figma" title="Figma" />
+      <img src="assets/Skill_icons/Figma-Light.svg" alt="Tailwind CSS" title="Tailwind CSS" />
+    </div>
+  </div>
+</section>
+
+<!--education section
+
+-->
+<section id="education-section">
+  <div class="education-container">
+    <div class="education-header">
+      <h2>Education</h2>
+      <button id="education-toggle" onclick="toggleEducation()">Collapse</button>
+    </div>
+    <div id="education-content" class="education-content">
+      <hr />
+      <div class="education-columns">
+        <div class="education-college">
+          <strong>B.E. | Hindusthan Institute of Technology | 2022-26</strong>
+          <ul>
+            <li>CGPA : 8.00 (With Hons)</li>
+          </ul>
+        </div>
+        <div class="education-school">
+          <div>
+            <strong>Class 12 | Venus Matric & Hr Sec School | 2022</strong>
+            <ul>
+              <li>Score: 73.47%</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Class 10 | Venus Matric & Hr Sec School | 2020</strong>
+            <ul>
+              <li>Score: 74.87%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Contact Box
  
 -->
@@ -88,5 +145,18 @@
     <span class="footer-name">@KoushikRajan</span>
   </div>
 </footer>
+<script>
+  function toggleEducation() {
+  const content = document.getElementById("education-content");
+  const btn = document.getElementById("education-toggle");
+  if (content.classList.contains("collapsed")) {
+    content.classList.remove("collapsed");
+    btn.textContent = "Collapse";
+  } else {
+    content.classList.add("collapsed");
+    btn.textContent = "Expand";
+  }
+}
+</script>
 </body>
 </html>
